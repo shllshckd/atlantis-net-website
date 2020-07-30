@@ -20,4 +20,4 @@ That's because you need to change a few things.
 
 1. In creds.py use real email account and password (those will be our sender). # example: email:peter.1999@gmail.com, password:peter1999
 
-2 In app.html change this email (receiving_email@example.com) in "recipients=['receiving_email@example.com'])" to whatever email address you want the messages to arrive at. # example: email:joe.2001@gmail.com
+2. In app.py change this email (receiving_email@example.com) in "recipients=['receiving_email@example.com'])" to whatever email address you want the messages to arrive at. # example: email:joe.2001@gmail.com

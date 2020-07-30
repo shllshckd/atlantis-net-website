@@ -1,0 +1,81 @@
+{% set active_page = "report_a_problem" %}
+
+{% extends "layout.html" %}
+{% block title %}
+    Atlantis Net :: Съобщи за проблем
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="eight-five">
+	<div class="col-12">
+		<h1 class="display-4">Съобщи за проблем с услугата</h1><hr>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="career">
+			<p>	
+			За <b>проблем с услугата</b>, може да съобщите както на <b>нашите телефони или на място</b>, така и <b>онлайн</b>.
+			</p><p>
+			Ще ни намерите на адрес:
+			</p><p>
+			Ботевград - офис, <b>пл. Незнаен войн 7, Бизнес Център, офис 5</b>
+			</p><p>
+			Ботевград - каса, <b>комплекс "Форум", магазин Атлантис Център</b>
+			</p><p>
+			Правец - каса, <b>бул. Трети март 24, Атлантис Център</b>, тел. <b>07133 / 5333</b>
+			</p><p>
+			Етрополе - каса, <b>бул. Г. Димитров 2, Атлантис Център</b>, тел.<b>0720 / 93333</b>
+			</p><p>
+			Телефони: <b>0723/93300</b>, <b>0723/93311</b> и на национален номер: <b>0700/45333</b>
+			</p><p>
+			Мобилни: <b>0888/001177</b> - Теленор/Глобул, <b>0899/001177</b> - A1/М-тел
+			</p><p>
+			Е-mail: <b>support@atlantisnet.bg</b>
+			</p>
+			<br>
+			<h2>Съобщи за проблем</h2>
+				<br>
+			{% for message in form.name.errors %}
+				<div class="flash">{{ message }}</div>
+			{% endfor %}
+			
+			{% for message in form.email.errors %}
+				<div class="flash">{{ message }}</div>
+			{% endfor %}
+			
+			{% for message in form.subject.errors %}
+				<div class="flash">{{ message }}</div>
+			{% endfor %}
+			
+			{% for message in form.message.errors %}
+				<div class="flash">{{ message }}</div>
+			{% endfor %}
+
+			<form action="{{ url_for('contacts') }}" method=post>
+				{{ form.hidden_tag() }}
+
+				<div class="d-flex justify-content-center">{{ form.name.label }}</div>
+
+				<div class="d-flex justify-content-center">{{ form.name }}</div>
+			
+				<div class="d-flex justify-content-center">{{ form.email.label }}</div>
+				<div class="d-flex justify-content-center">{{ form.email }}</div>
+			
+				<div class="d-flex justify-content-center">{{ form.subject.label }}</div>
+				<div class="d-flex justify-content-center">{{ form.subject }}</div>
+			
+				<div class="d-flex justify-content-center">{{ form.message.label }}</div>
+				<div class="d-flex justify-content-center">{{ form.message }}</div>
+			<br>
+				<div class="d-flex justify-content-center">{{ form.submit }}</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

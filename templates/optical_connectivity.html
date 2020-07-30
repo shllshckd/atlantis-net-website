@@ -1,0 +1,33 @@
+{% set active_page = "optical_connectivity" %}
+
+{% extends "layout.html" %}
+{% block title %}
+    Atlantis Net :: Оптическа свързаност
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="eight-five">
+	<div class="col-12">
+		<h1 class="display-4">Оптическа свързаност</h1><hr>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="tech1" src="{{ url_for('static', filename='img/s4_server_2.png') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="tech2" src="{{ url_for('static', filename='img/s4_cabels.png') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="tech3" src="{{ url_for('static', filename='img/s4_server_1.png') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+	<div class="col-12">
+		<div class="career">
+		<p>	
+		Чисто технологично оптичната връзка е най-оптималния вариант за реализиране на комплексно решение за пренос на данни и глас, което се обуславя от въможността за реализиране на високоскоростни връзки (100Mbit/s, 1Gbit/s или дори 10Gbit/s) на разстояния надвишаващи 100 км, без те да се влият от каквито и да било атмосферни условия или електростатични смущения.</p><p>Нашата IP-базирана оптична мрежа е изградена от висококачествено мрежово оборудване на Cisco Systems, HP и Juniper Networks, като е осигурен непрекъснат мониторинг и поддръжка.
+		</p><p>
+		Ако качествения Интернет е критичен фактор за развитието на Вашия бизнес, то тогава оптичната MAN мрежа на Атлантис Нет е оптималното решение, което Ви дава гаранции за безпроблемна и ефективна работа.
+		</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

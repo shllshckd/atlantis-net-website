@@ -1,0 +1,28 @@
+{% set active_page = "software_support" %}
+
+{% extends "layout.html" %}
+{% block title %}
+    Atlantis Net :: Съобщението е изпратено
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="eight-five">
+	<div class="col-12">
+		<h1 class="display-4">Съобщението е изпратено</h1><hr>
+		<br>
+		<img style="width:50%; height: 50%;" class="software-support" src="{{ url_for('static', filename='img/167-512.png') }}"><br><br>
+	</div>
+	<div class="col-12">
+		<div class="career">
+		<div class="alert alert-success" role="alert">
+			Благодарим за съобщението ви, ще се свържем с вас при първа възможност.
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

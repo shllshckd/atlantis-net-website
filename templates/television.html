@@ -1,0 +1,28 @@
+{% set active_page = "television" %}
+
+{% extends "layout.html" %}
+{% block title %}
+    Atlantis Net :: Телевизия
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="eight-five">
+	<div class="col-12">
+		<h1 class="display-4">Телевизия</h1><hr>
+		<br>
+		<img class="tv" src="{{ url_for('static', filename='img/tv.jpg') }}">
+	</div>
+	<div class="col-12">
+		<div class="career">
+		<p>	
+		Предлагаме и телевизионни услуги.
+		</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

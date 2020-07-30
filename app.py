@@ -18,7 +18,7 @@ app.config['SECRET_KEY'] = creds.secret_key
 # mail
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 587 # 465
+app.config["MAIL_PORT"] = 587 # 465 for SSL
 app.config["MAIL_SUPPRESS_SEND"] = False
 app.config["MAIL_USE_SSL"] = False
 app.config["MAIL_USE_TLS"] = True

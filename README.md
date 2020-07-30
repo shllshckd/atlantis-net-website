@@ -2,9 +2,9 @@
 Web application for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2
 
 
-# How to build and run?
+# How to build and run (for Windows)?
 
-1. In the project's folder open PowerShell (shift + right mouse button) and execute the following commands (Windows):
+1. In the project's folder open PowerShell (shift + right mouse button) and execute the following commands:
 
 * py -3 -m venv venv
 * venv\Scripts\activate

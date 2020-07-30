@@ -1,0 +1,30 @@
+{% set active_page = "cabling" %}
+
+{% extends "layout.html" %}
+{% block title %}
+    Atlantis Net :: Структорно окабеляване
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid padding">
+<div class="row text-center">
+<div class="eight-five">
+	<div class="col-12">
+		<h1 class="display-4">Структорно окабеляване</h1><hr>
+		<br>
+		<img class="people" src="{{ url_for('static', filename='img/s4_strukturno1.png') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="people" src="{{ url_for('static', filename='img/s4_patch-cable.png') }}"><br><br>
+		<img class="people" src="{{ url_for('static', filename='img/s4_strukturno2.png') }}">
+	</div>
+	<div class="col-12">
+		<div class="career">
+		<p>	
+		Занимаваме се и със структорно окабеляване.
+		</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

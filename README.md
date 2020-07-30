@@ -1,5 +1,5 @@
 # Atlantis NET website
-Web application for Atlantis NET built with bootstrap 4, html 5 and flask 1.1.2
+Web application for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2
 
 
 # How to build and run?

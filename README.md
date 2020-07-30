@@ -12,7 +12,7 @@ Web application for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2
 * set FLASK_APP=app.py
 * flask run
 
-2. The site should be running on localhost - 127.0.0.1:5000
+2. The app should be running on localhost - 127.0.0.1:5000
 
 # /contacts and /report_a problem aren't working?
 

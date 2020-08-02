@@ -343,7 +343,7 @@ figure {
   }
 
   .carousel-caption {
-    top: 45%;
+    top: 50%;
   }
   
   .carousel-caption h1 {
@@ -379,9 +379,12 @@ figure {
     width: 15%;
     height: 15%;
   }
-  
+  .carousel-caption {
+    top: 40%;
+  }
   .carousel-indicators {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
   }
   
   .spanOne, .spanTwo, .spanThree, .spanFour {
@@ -400,7 +403,7 @@ figure {
   }
   
   .carousel-caption {
-    top: 43%;
+    top: 40%;
   }
   
   .carousel-caption h1 {
@@ -417,7 +420,8 @@ figure {
   }
 
   .carousel-indicators {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
   }
 
   .display-4 {

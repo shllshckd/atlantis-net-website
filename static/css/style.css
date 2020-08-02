@@ -325,6 +325,10 @@ figure {
       font-size: 4em;
       padding: 2rem;
   }
+  /* testing */
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -332,6 +336,10 @@ figure {
     width: 20%;
     height: 20%;
     /* padding-left: .5rem; */
+  }
+  /* testing */
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 100%;
   }
 
   .carousel-caption {
@@ -365,11 +373,32 @@ figure {
 @media (max-width: 640px) {
   #slides .btn-lg {
     visibility: hidden;
-  } 
+  }
+  /* testing */
+  .logo{
+    width: 15%;
+    height: 15%;
+  }
   
+  .carousel-indicators {
+    display: none;
+  }
+  
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 80%;
+  }
 }
 
 @media (max-width: 576px) {
+  .logo{
+    width: 15%;
+    height: 15%;
+  }
+  
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 70%;
+  }
+  
   .carousel-caption {
     top: 43%;
   }
@@ -399,7 +428,6 @@ figure {
     font-size: 2em;
     padding: .7rem;
   }
-
 }
 
 

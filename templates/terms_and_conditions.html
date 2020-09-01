@@ -10,25 +10,24 @@
 <div class="row text-center">
 <div class="eight-five">
 	<div class="col-12">
-		<h1 class="display-4">Общи условия</h1><hr>
-
+		<h1 class="display-4">Общи условия</h1>
+		<hr>
 	</div>
 	<div class="col-12">
-		<div class="career">
+		<div class="text">
 		<p>	
-		Можете да изтеглите <a href="{{ url_for('static', filename='pdf/ou.pdf') }}">Общите Условия</a> на Вашия компютър от <a href="{{ url_for('static', filename='pdf/ou.pdf') }}">тук</a>.
+			Можете да изтеглите <a href="{{ url_for('static', filename='pdf/ou.pdf') }}">Общите Условия</a> на Вашия компютър от <a href="{{ url_for('static', filename='pdf/ou.pdf') }}">тук</a>.
 		</p><p>
-		Запознайте се с <a href="{{ url_for('static', filename='pdf/open-net.pdf') }}">Правилата и мерките за гарантиране на отворен достъп до интернет, съгласно Регламент (ЕС) 2015/2120, от 25.11.2015 г.</a>
+			Запознайте се с <a href="{{ url_for('static', filename='pdf/open-net.pdf') }}">Правилата и мерките за гарантиране на отворен достъп до интернет, съгласно Регламент (ЕС) 2015/2120, от 25.11.2015 г.</a>
 		</p><p>
-		Запознайте се с <a href="{{ url_for('static', filename='pdf/politika-lichni-danni.pdf') }}">Политика за защита на личните данни в „Атлантис Нет“ ООД</a>.
+			Запознайте се с <a href="{{ url_for('static', filename='pdf/politika-lichni-danni.pdf') }}">Политика за защита на личните данни в „Атлантис Нет“ ООД</a>.
 		</p><p>
-		Вижте и <a href="{{ url_for('static', filename='pdf/stats-quality.pdf') }}">Параметри за качеството на предоставяните услуги и обслужване</a>.
+			Вижте и <a href="{{ url_for('static', filename='pdf/stats-quality.pdf') }}">Параметри за качеството на предоставяните услуги и обслужване</a>.
 		</p><p>
-		За да отворите документите Ви е необходим <a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a> или <a href="https://www.foxitsoftware.com/downloads/index.html">Foxit Reader</a>.
-		
-		</p><br>
-
-		<embed src="{{ url_for('static', filename='pdf/ou.pdf') }}" width="700px" height="800px" type="application/pdf">
+			За да отворите документите Ви е необходим <a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a> или <a href="https://www.foxitsoftware.com/downloads/index.html">Foxit Reader</a>.
+		</p>
+		<br>
+			<embed id="pdf" src="{{ url_for('static', filename='pdf/ou.pdf') }}" type="application/pdf">
 		</div>
 	</div>
 </div>

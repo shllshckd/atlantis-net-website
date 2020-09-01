@@ -19,9 +19,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 	<a class="navbar-brand" href="{{ url_for('home') }}">
-	<img class="logo" src="{{ url_for('static', filename='img/logo-sm.png') }}"> <span class="spanOne" style="color: rgb(255, 123, 0)">A</span><span class="spanTwo" style="color: rgb(116, 114, 114)">tlantis</span><span class="spanThree" style="color: rgb(255, 123, 0)"> N</span><span class="spanFour" style="color: rgb(116, 114, 114)">et</span></a>
+		
+	<img class="logo" src="{{ url_for('static', filename='img/logo-sm.png') }}">&nbsp;
+	<span class="spanOne">A</span><span class="spanTwo">tlantis</span>
+	<span class="spanThree">N</span><span class="spanFour">et</span></a>
+
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+	  <i id="bars" class="fa fa-bars"></i>
 	</button>
   
 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -29,50 +33,35 @@
 		<li class="nav-item {{ 'active' if active_page == 'home' else '' }}">
 			<a class="nav-link" href={{ url_for('home') }}>Начало</a>
 		</li>
-		<li class="nav-item dropdown 
-		{{ 'active' if active_page == 'history' }}
-		{{ 'active' if active_page == 'career' }}
-		{{ 'active' if active_page == 'interfaces' }}">
+		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">За нас</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			  <a class="dropdown-item" href="{{ url_for('history') }}">История, мисия и цели</a>
-			  <a class="dropdown-item" href="{{ url_for('career') }}">Кариера</a>
-			  <a class="dropdown-item" href="{{ url_for('interfaces') }}">Интерфейси за достъп</a>
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'history' }}" href="{{ url_for('history') }}">История, мисия и цели</a>
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'career' }}" href="{{ url_for('career') }}">Кариера</a>
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'interfaces' }}" href="{{ url_for('interfaces') }}">Интерфейси за достъп</a>
 			</div>
 		</li>
-		<li class="nav-item dropdown
-		{{ 'active' if active_page == 'lan_access' }}
-		{{ 'active' if active_page == 'optical_connectivity' }}
-		{{ 'active' if active_page == 'wireless_connectivity' }}
-		{{ 'active' if active_page == 'television' }}
-		{{ 'active' if active_page == 'cabling' }}
-		{{ 'active' if active_page == 'software_support' }}
-		{{ 'active' if active_page == 'web_design' }}
-		{{ 'active' if active_page == 'hosting' }}
-		{{ 'active' if active_page == 'cctv' }}">
+		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			  <a class="dropdown-item" href="{{ url_for('lan_access') }}">Кабелен LAN достъп</a>
-			  <a class="dropdown-item" href="{{ url_for('optical_connectivity') }}">Оптична свързаност</a> 
-			  <a class="dropdown-item" href="{{ url_for('wireless_connectivity') }}">Безжичен достъп</a> 
-			  <a class="dropdown-item" href="{{ url_for('television') }}">Телевизия</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'lan_access' }}" href="{{ url_for('lan_access') }}">Кабелен LAN достъп</a>
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'optical_connectivity' }}" href="{{ url_for('optical_connectivity') }}">Оптична свързаност</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'wireless_connectivity' }}" href="{{ url_for('wireless_connectivity') }}">Безжичен достъп</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'television' }}" href="{{ url_for('television') }}">Телевизия</a> 
 			  <hr>
-			  <a class="dropdown-item" href="{{ url_for('cabling') }}">Структурно окабеляване</a> 
-			  <a class="dropdown-item" href="{{ url_for('software_support') }}">Софтуерна поддръжка и осигуряване</a> 
-			  <a class="dropdown-item" href="{{ url_for('web_design') }}">Уеб дизайн</a> 
-			  <a class="dropdown-item" href="{{ url_for('hosting') }}">Хостинг</a> 
-			  <a class="dropdown-item" href="{{ url_for('cctv') }}">СОТ, видеонаблюдение</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'cabling' }}" href="{{ url_for('cabling') }}">Структурно окабеляване</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'software_support' }}" href="{{ url_for('software_support') }}">Софтуерна поддръжка и осигуряване</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'web_design' }}" href="{{ url_for('web_design') }}">Уеб дизайн</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'hosting' }}" href="{{ url_for('hosting') }}">Хостинг</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'cctv' }}" href="{{ url_for('cctv') }}">СОТ, видеонаблюдение</a> 
 			</div>
 		</li>
-		<li class="nav-item dropdown 
-		{{ 'active' if active_page == 'prices_internet' }}
-		{{ 'active' if active_page == 'prices_telephony' }}
-		{{ 'active' if active_page == 'prices_trio_package' }}">
+		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Цени</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			  <a class="dropdown-item" href="{{ url_for('prices_internet') }}">Интернет</a> 
-			  <a class="dropdown-item" href="{{ url_for('prices_telephony') }}">Телефония</a> 
-			  <a class="dropdown-item" href="{{ url_for('prices_trio_package') }}">Trio пакет</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'prices_internet' }}" href="{{ url_for('prices_internet') }}">Интернет</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'prices_telephony' }}" href="{{ url_for('prices_telephony') }}">Телефония</a> 
+			  <a class="dropdown-item" id="{{ 'active' if active_page == 'prices_trio_package' }}" href="{{ url_for('prices_trio_package') }}">Trio пакет</a> 
 			</div>
 		</li>
 		<li class="nav-item {{ 'active' if active_page == 'subscription_check' }}">
@@ -96,10 +85,8 @@
 
 <!--- Main page -->
 
-<div>
-	{% block body %}
-	{% endblock %}
-</div>
+{% block body %}
+{% endblock %}
 
 <!-- Footer -->
 

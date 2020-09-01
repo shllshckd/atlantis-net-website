@@ -11,12 +11,16 @@ html, body {
 }
 
 .logo {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   /* padding-left: .5rem; */
 }
 
-.active a{
+.active a, .subscription, .orange {
+  color: rgb(255, 123, 0) !important;
+}
+
+#active {
   color: rgb(255, 123, 0) !important;
 }
 
@@ -25,10 +29,11 @@ html, body {
 .navbar-brand {
   font-size: 150%;
 }
-
+/*
 .navbar {
-  padding: .1rem;
+  padding: .1rem; 
 }
+*/
 
 .navbar-nav li {
   padding-right: 10px;
@@ -156,14 +161,10 @@ html, body {
   color: #d5d5d5;
 }
 
-/* history */
+/* text font size */
 
-.history, .career, .hosting {
+.text {
   font-size: 130%;
-}
-
-.tech {
-  margin-left: 2rem;
 }
 
 /* misc */
@@ -173,6 +174,14 @@ html, body {
   width: auto; 
   max-width: 300px; 
   max-height: 300px;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-65 {
+  width: 65%;
 }
 
 .big {
@@ -207,6 +216,27 @@ hr.light-100{
 }
 
 /* images  */
+
+#web-design, #software-support, #message-sent {
+  width: 50%; 
+  height: 50%;
+}
+
+#message-sent {
+  width: 30%; 
+  height: 30%;
+}
+
+/* custom margins for images */
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.margin-lr {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
 
 /* contact form */
 
@@ -252,7 +282,8 @@ form input#submit {
   background-image: -moz-linear-gradient(top, #f4f4f4, #e5e5e5);
   background-image: -ms-linear-gradient(top, #f4f4f4, #e5e5e5);
   background-image: -o-linear-gradient(top, #f4f4f4, #e5e5e5);
-  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
+  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f4f4, endColorstr=#e5e5e5);
 }
  
 form input#submit:hover{
@@ -264,7 +295,8 @@ form input#submit:hover{
   background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
   background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
   background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
-  background-image: linear-gradient(top, #dbdbdb, #cccccc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
+  background-image: linear-gradient(top, #dbdbdb, #cccccc);
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
 }
 
 /* Message flashing */
@@ -284,6 +316,7 @@ form input#submit:hover{
 }
 
 /*--- Fixed Background Image --*/
+
 figure {
   position: relative;
   width: 100%;
@@ -317,34 +350,94 @@ figure {
     padding: 1rem;
 }
 
+#pdf {
+  min-width: 85%;
+  min-height: 1000px;
+}
+
+/* spans and bars, colors */
+
+.spanTwo, .spanFour {
+  color: rgb(116, 114, 114);
+}
+
+.spanOne, .spanThree {
+  color: rgb(255, 123, 0);
+}
+
+#bars {
+  color: rgb(255, 123, 0);
+}
+
+.price-mini, .plan-mini {
+  font-size: 130%;
+  color:red;
+}
+
+.price-standard, .plan-standard {
+  font-size: 130%;
+  color:green;
+}
+
+.price-ultra {
+  font-size: 130%;
+  color:blue;
+}
+
+.internet-mini{
+  color: red;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 130%;
+}
+
+.internet-standard {
+  color: green; 
+  text-shadow: 1px 1px 1px gray;
+  font-size: 130%;
+}
+
+.internet-ultra {
+  color: blue;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 130%;
+  width: 125px;
+}
+
+.ultra-misc {
+  color: blue;
+  font-size: 110%;
+}
+
+.standart-misc{
+  color: green;
+  font-size: 110%;
+}
+
+.mini-misc{
+  color: red;
+  font-size: 110%;
+}
+
 /*---Media Queries --*/
 
-@media (max-width: 992px) {
+@media (max-width: 992px) { 
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 120%;
+  }
   .social a {
     font-size: 4em;
     padding: 2rem;
   }
-  /* testing */
-  .spanOne, .spanTwo, .spanThree, .spanFour {
-    font-size: 120%;
+  .logo {
+    width: 23%;
+    height: 23%;
+    /* padding-left: .5rem; */
   }
 }
 
 @media (max-width: 768px) {
-  .logo {
-    width: 20%;
-    height: 20%;
-    /* padding-left: .5rem; */
-  }
-  /* testing */
-  .spanOne, .spanTwo, .spanThree, .spanFour {
-    font-size: 90%;
-  }
   .nav-item, .dropdown-item {
     font-size: 100%;
-  }
-  .carousel-caption {
-    top: 50%;
   }
   .carousel-caption h1 {
     font-size: 350%;
@@ -352,55 +445,39 @@ figure {
   .carousel-caption h3 {
     font-size: 140%;
     font-weight: 400;
-    padding-bottom: .2rem;
+    /* padding-bottom: .2rem; */
   }
   .carousel-caption .btn {
     font-size: 95%;
     padding: 8px 14px;
   }
-  .display-4 {
-    font-size: 200%;
+  .carousel-caption {
+    top: 45%;
+  }
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 90%;
   }
   .social a {
     font-size: 2.5em;
     padding: 1.2rem;
   }
-}
-
-@media (max-width: 640px) {
-  #slides .btn-lg {
-    visibility: hidden;
+  .display-4 {
+    font-size: 200%;
   }
-  .carousel-indicators {
-    /* display: none; */
-    visibility: hidden;
-  }
-  /* atlantis-net logo */
   .logo {
-    width: 15%;
-    height: 15%;
-  }
-  .carousel-caption {
-    top: 40%;
-  }
-  .spanOne, .spanTwo, .spanThree, .spanFour {
-    font-size: 85%;
-  }
-  .nav-item, .dropdown-item {
-    font-size: 95%;
+    width: 20%;
+    height: 20%;
+    /* padding-left: .5rem; */
   }
 }
 
 @media (max-width: 576px) {
-  .logo {
-    width: 15%;
-    height: 15%;
-  }
-  .spanOne, .spanTwo, .spanThree, .spanFour {
-    font-size: 80%;
-  }
-  .carousel-caption {
-    top: 40%;
+  /*.carousel-indicators {*/
+    /* display: none; */
+    /* visibility: hidden; */
+  /*}  */
+  #slides .btn-lg {
+    visibility: hidden;
   }
   .carousel-caption h1 {
     font-size: 250%;
@@ -412,12 +489,59 @@ figure {
     font-size: 90%;
     padding: 4px 8px;
   }
-  .display-4 {
-    font-size: 160%;
+  .carousel-caption {
+    top: 36%;
+  }
+  .first-caption {
+    top: 44%;
+  }
+  .nav-item, .dropdown-item {
+    font-size: 95%;
+  }
+  .spanOne, .spanTwo, .spanThree, .spanFour {
+    font-size: 75%;
   }
   .social a {
     font-size: 2em;
     padding: .7rem;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .logo {
+    width: 15%;
+    height: 15%;
+    /* padding-left: .5rem; */
+  }
+
+  @media (max-width: 320px) {
+    #slides .btn-lg {
+      visibility: hidden;
+    }
+    .carousel-indicators {
+      /* display: none; */
+      visibility: hidden;
+    }  
+    .logo {
+      width: 13%;
+      height: 13%;
+    }
+    .carousel-caption {
+      top: 32%;
+    }
+    .first-caption {
+      top: 40%;
+    }
+    .nav-item, .dropdown-item {
+      font-size: 90%;
+    }
+    .spanOne, .spanTwo, .spanThree, .spanFour {
+      font-size: 70%;
+    }
+    .social a {
+      font-size: 1.9em;
+      padding: .5rem;
+    }
   }
 }
 

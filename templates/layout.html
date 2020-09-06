@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="Атлантис НЕТ ООД е специализиран доставчик на Интернет услуги и дейност, ориентирана към нуждите на широк спектър клиенти на територията на София град и общините Ботевград, Правец, Етрополе, Тетевен, Ябланица, Роман и Мездра." />
 	<meta name="Keywords" content="Атлантис НЕТ, Атлантис НЕТ ООД, атлантис, Atlantis, Atlantis Net, интернет доставчик, интернет услуги, интернет, София, Ботевград, Правец, Етрополе, Тетевен, Ябланица, Роман, Мездра" />
 	<title>{% block title %}{% endblock %}</title>
@@ -31,7 +31,7 @@
 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
 	  <ul class="navbar-nav ml-auto">
 		<li class="nav-item {{ 'active' if active_page == 'home' else '' }}">
-			<a class="nav-link" href={{ url_for('home') }}>Начало</a>
+			<a class="nav-link" href="{{ url_for('home') }}">Начало</a>
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">За нас</a>

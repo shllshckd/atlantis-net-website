@@ -1,6 +1,6 @@
 # Atlantis NET website
-Web application for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2
-
+Web design for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2. Purely frontend work, no little to no backend.
+Contact us functionality - email sending.
 
 # How to build and run (for Windows), assuming you have Python installed?
 

@@ -2,9 +2,11 @@
 Web design for Atlantis NET built with Bootstrap 4, HTML 5 and Flask 1.1.2. Purely frontend work, no little to no backend.
 Contact us functionality - email sending.
 
-# How to build and run (for Windows), assuming you have Python installed?
+# How to build and run (Windows)
 
-1. In the project's folder open PowerShell (shift + right mouse button) and execute the following commands:
+0. Get Python - https://www.python.org/downloads/
+
+2. In the project's folder open PowerShell (shift + right mouse button) and execute the following commands:
 
 * py -3 -m venv venv
 * venv\Scripts\activate
@@ -14,8 +16,7 @@ Contact us functionality - email sending.
 
 2. The app should be running on localhost - 127.0.0.1:5000
 
-
-# /contacts and /report_a_problem aren't working?
+# /contacts and /report_a_problem aren't working
 
 That's because you need to change a few things.
 
